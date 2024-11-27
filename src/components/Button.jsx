@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
-const Button = ({ title, id, leftIcon, containerClass }) => {
+const Button = ({ title, id, leftIcon, containerClass, rightIcon }) => {
   return (
     <button
       id={id}
@@ -12,6 +12,7 @@ const Button = ({ title, id, leftIcon, containerClass }) => {
       <span className="relative incline-flex overflow-hidden font-general text-xs uppercase">
         <div>{title}</div>
       </span>
+      {rightIcon}
     </button>
   );
 };
